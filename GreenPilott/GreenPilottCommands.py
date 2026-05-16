@@ -5,7 +5,7 @@ class GreenHello(CommandBase):
 
     def __init__(self, pilotParams):
 
-        super().__init__(pilotParams)
+        CommandBase.__init__(self, pilotParams, "GreenHello")
 
     def execute(self):
 
