@@ -4,7 +4,9 @@ from pilotCommands import CommandBase
 class GreenHello(CommandBase):
 
     def __init__(self, pilotParams):
+
         CommandBase.__init__(self, pilotParams)
+        self.log = self.pp.logger
 
     def execute(self):
 
