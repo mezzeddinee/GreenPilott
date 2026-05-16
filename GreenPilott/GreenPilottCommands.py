@@ -1,12 +1,11 @@
-from pilotCommands import CommandBase
+from pilotTools import CommandBase
 
 
 class GreenHello(CommandBase):
 
     def __init__(self, pilotParams):
 
-        CommandBase.__init__(self, pilotParams)
-        self.log = self.pp.logger
+        super().__init__(pilotParams)
 
     def execute(self):
 
