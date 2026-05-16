@@ -5,12 +5,13 @@ class GreenHello(CommandBase):
 
     def __init__(self, pilotParams):
 
-        CommandBase.__init__(self, pilotParams, "GreenHello")
+        self.pp = pilotParams
+        self.log = pilotParams.log
 
     def execute(self):
 
-        self.log.info("################################")
-        self.log.info("### GREEN HELLO FROM MAZEN ###")
-        self.log.info("################################")
+        print("################################")
+        print("### GREEN HELLO FROM MAZEN ###")
+        print("################################")
 
         return 0
